@@ -26,7 +26,7 @@ for ele in ds["train"]:
     with open(uuid_txt, "w") as f:
         f.write(ele["prompt"])
     ele["image"].save(uuid_img)
-```python
+```
 
 ```bash
 edit os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0" in run.py
