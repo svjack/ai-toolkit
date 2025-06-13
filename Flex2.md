@@ -28,6 +28,21 @@ for ele in ds["train"]:
     ele["image"].save(uuid_img)
 ```
 
+```python
+change ai-toolkit/control_generator.py 
+
+to
+
+from transformers import pipeline
+device = "cuda:0"
+control_depth_model = pipeline(
+                    task="depth-estimation",
+                    model="depth-anything/Depth-Anything-V2-Large-hf",
+                    device=device,
+                    #torch_dtype=torch.float16
+                )
+```
+
 ```bash
 edit os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0" in run.py
 
