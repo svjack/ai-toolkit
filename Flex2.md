@@ -29,7 +29,7 @@ for ele in ds["train"]:
 ```
 
 ```python
-change ai-toolkit/control_generator.py 
+change ai-toolkit/toolkit/control_generator.py
 
 to
 
