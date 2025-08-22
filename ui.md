@@ -79,3 +79,10 @@ source_dir = "Ineffa_videos_captioned_960x544x4"
 target_dir = "Ineffa_videos_captioned_960x544x4_9"
 check_and_copy_files(source_dir, target_dir)
 ```
+
+- 14B video config
+```txt
+resolution: 512
+frame_count: 16
+disable inference sample
+```
