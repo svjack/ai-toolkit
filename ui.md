@@ -21,7 +21,7 @@ os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
 cd ai-toolkit/ui
 npm run build_and_start
 
-huggingface-cli download ai-toolkit/Wan2.2-T2V-A14B-Diffusers-bf16 --local-dir="."
+huggingface-cli download ai-toolkit/Wan2.2-T2V-A14B-Diffusers-bf16 --local-dir="Wan2.2-T2V-A14B-Diffusers-bf16"
 ```
 
 - Filter Video
