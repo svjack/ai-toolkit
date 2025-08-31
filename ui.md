@@ -31,7 +31,7 @@ import shutil
 from tqdm import tqdm
 from moviepy.editor import VideoFileClip
 
-def check_and_copy_files(source_dir, target_dir, min_frames=9):
+def check_and_copy_files(source_dir, target_dir, min_frames=19):
     # 确保目标目录存在
     os.makedirs(target_dir, exist_ok=True)
     
@@ -78,7 +78,7 @@ def check_and_copy_files(source_dir, target_dir, min_frames=9):
 
 # 使用示例
 source_dir = "Ineffa_videos_captioned_960x544x4"
-target_dir = "Ineffa_videos_captioned_960x544x4_9"
+target_dir = "Ineffa_videos_captioned_960x544x4_19"
 check_and_copy_files(source_dir, target_dir)
 ```
 
