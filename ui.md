@@ -16,6 +16,7 @@ cd ai-toolkit
 run.py 
 run_modal.py 
 
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
 
 cd ai-toolkit/ui
