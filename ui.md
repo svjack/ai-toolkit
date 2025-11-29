@@ -20,11 +20,11 @@ os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
 
 cd ai-toolkit/ui
-'''
+```
 
 - 去除字体引用 ai-toolkit/ui/src/app/layout.tsx
 
-'''
+```
 import type { Metadata } from 'next';
 //import { Inter } from 'next/font/google';
 import './globals.css';
@@ -72,10 +72,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 
-'''
+```
 
 
-'''
+```
 npm run build_and_start
 
 huggingface-cli download ai-toolkit/Wan2.2-T2V-A14B-Diffusers-bf16 --local-dir="Wan2.2-T2V-A14B-Diffusers-bf16"
