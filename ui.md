@@ -1,4 +1,9 @@
 ```bash
+conda activate system
+pip freeze > sys_requirements.txt
+conda activate base
+pip install -r sys_requirements.txt
+
 huggingface-cli download \
   --repo-type dataset \
   svjack/Genshin-Impact-Portrait-with-Tags-Filtered-IID-Gender-SP \
