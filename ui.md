@@ -83,6 +83,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 ```
 npm run build_and_start
 
+npm install -g cnpm --registry=https://registry.npmmirror.com
+cnpm run build_and_start
+
 huggingface-cli download ai-toolkit/Wan2.2-T2V-A14B-Diffusers-bf16 --local-dir="Wan2.2-T2V-A14B-Diffusers-bf16"
 ```
 
